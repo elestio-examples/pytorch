@@ -2,6 +2,7 @@ version: "2.0"
 services:
   main:
     image: tverous/pytorch-notebook:${SOFTWARE_VERSION_TAG}
+    restart: always
     environment:
       - JUPYTER_TOKEN=${ADMIN_PASSWORD}
     volumes:
